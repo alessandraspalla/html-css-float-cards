@@ -1,0 +1,47 @@
+/* general style */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container {
+    width: 80%;
+    margin: 100px auto;
+    padding: 20px;
+}
+
+
+/* header style */
+
+header {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+header h1 {
+    font-size: 25px;
+    color: #e53170;
+    margin-bottom: 40px;
+}
+
+/* debug style */
+
+.row {
+    border: 1px solid black;
+}
+
+.row::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.square {
+    height: 80px;
+    border: 1px solid green;
+    width: calc(100%/3 - 20px);
+    float: left;
+    margin: 20px 10px;
+}
